@@ -2,7 +2,8 @@ var inputField = document.getElementById('inputField');
 var addToDo = document.getElementById('addToDo');
 var toDoContainer = document.getElementById('toDoContainer');
 
-addToDo.addEventListener('click', function(){
+addToDo.addEventListener('click', function(event){
+    event.preventDefault();
     
     var data = inputField.value;
     console.log(data);
